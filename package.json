@@ -1,0 +1,18 @@
+{
+  "name": "connect-api",
+  "version": "1.0.0",
+  "description": "connect-api",
+  "main": "index.ts",
+  "scripts": {},
+  "author": "Aliaksandr Haradkou",
+  "license": "ISC",
+  "dependencies": {
+    "base64url": "3.0.1",
+    "mailslurp-client": "15.12.3"
+  },
+  "devDependencies": {
+    "@netlify/functions": "1.0.0",
+    "@types/nodemailer": "6.4.4",
+    "@types/nodemailer-mailgun-transport": "1.4.3"
+  }
+}

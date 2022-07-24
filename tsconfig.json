@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "moduleResolution": "node"
+  }
+}
