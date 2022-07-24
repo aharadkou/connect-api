@@ -3,6 +3,13 @@ import base64url from 'base64url';
 import { MailSlurp } from "mailslurp-client";
 
 export const handler: Handler = async (event) => {
+  if (event.httpMethod !== 'POST') {
+    return {
+      statusCode: 400,
+      body: JSON.stringify({ message: `${event.httpMethod} isn't supported` })
+    }    
+  }
+
   if (process.env.QR_CODE_URL !== base64url.decode(<string>event?.headers?.token)) {
     return {
       statusCode: 401,
