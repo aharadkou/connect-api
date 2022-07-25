@@ -21,7 +21,7 @@ export const handler: Handler = async (event) => {
   if (!body.message) {
     return {
       statusCode: 400,
-      body: JSON.stringify({ message: "Email message isn't provided" })
+      body: JSON.stringify({ message: "Message isn't provided" })
     }    
   }
 
